@@ -15,9 +15,9 @@ A seamless Marp preview plugin for Neovim featuring real-time cursor synchroniza
 - [curl](https://curl.se/)
 
 ## 🚀 Installation (Lazy.nvim)
-\`\`\`lua
+```lua
 {
-    'YourGitHubUsername/sync-marp.nvim',
+    'franzhuang/sync-marp.nvim',
     ft = 'markdown',
     config = function()
         require('sync_marp').setup()
@@ -27,7 +27,7 @@ A seamless Marp preview plugin for Neovim featuring real-time cursor synchroniza
         vim.keymap.set('n', '<leader>mq', ':SyncMarpStop<CR>', { desc = 'Stop Marp Sync', silent = true })
     end,
 }
-\`\`\`
+```
 
 ## 🛠️ Commands
 - \`:SyncMarpStart\`: Starts the proxy server, compiles the presentation, and opens the live preview in your browser.
